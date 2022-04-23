@@ -1,7 +1,37 @@
-body {
-    background-color: aqua;
+$primary-color: #15ffbc;
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
-.prueba {
-    color: red;
+body {
+    background-color: $primary-color;
+    font-family: "Oswald", sans-serif;
+}
+
+.list__element-img {
+    width: 200px;
+}
+
+.header {
+    padding: 20px;
+    width: 100%;
+}
+
+.nav__list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.nav__list--element {
+    height: 100%;
+}
+
+.nav__list--element,
+a {
+    text-decoration: none;
+    color: black;
 }

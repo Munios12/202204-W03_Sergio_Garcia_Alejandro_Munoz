@@ -1,9 +1,37 @@
-body {
-  background-color: aqua;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-.prueba {
-  color: red;
+body {
+  background-color: #15ffbc;
+  font-family: "Oswald", sans-serif;
+}
+
+.list__element-img {
+  width: 200px;
+}
+
+.header {
+  padding: 20px;
+  width: 100%;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.nav__list--element {
+  height: 100%;
+}
+
+.nav__list--element,
+a {
+  text-decoration: none;
+  color: black;
 }
 
 /*# sourceMappingURL=index.css.map */
