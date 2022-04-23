@@ -9,6 +9,7 @@ body {
   font-family: "Oswald", sans-serif;
 }
 
+/*-------------------------------HEADER--------------------------*/
 .list__element-img {
   width: 200px;
 }
@@ -32,6 +33,26 @@ body {
 a {
   text-decoration: none;
   color: black;
+}
+
+/*-------------------------------MAIN--------------------------*/
+.main__section--video {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  height: 300px;
+  background-color: #ff8dac;
+  font-size: 1.2rem;
+  color: #15ffbc;
+  letter-spacing: 0.5rem;
+  transform: scale(1.1) skewY(-10deg);
+  width: 95.2%;
+}
+.main__section--video .video--img {
+  width: 100px;
+  transform: scale(1) skewY(10deg);
 }
 
 /*# sourceMappingURL=index.css.map */
