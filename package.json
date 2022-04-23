@@ -4,12 +4,17 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "sass:v": "sass --version",
+        "sass": "sass -w scss/:css/"
     },
     "keywords": [
         "tercer",
         "challenge"
     ],
     "author": "Sergio Garcia, Alejandro Muñoz",
-    "license": "ISC"
+    "license": "ISC",
+    "devDependencies": {
+        "sass": "^1.50.1"
+    }
 }
