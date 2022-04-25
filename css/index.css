@@ -1,12 +1,13 @@
 .footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: #080d14;
   font-family: "oswald";
-  font-size: small;
-  text-align: center;
+  font-size: 15px;
   padding-top: 15vh;
-  padding-bottom: 3vh;
-  padding-left: 1vh;
-  padding-right: 1vh;
+  padding-left: 2vh;
+  padding-right: 2vh;
   height: 130vh;
 }
 .footer__title {
@@ -17,7 +18,22 @@
 .footer__icon {
   color: #15ffbc;
   width: 0.6em;
-  padding-bottom: 3vh;
+  padding-bottom: 5vh;
+}
+.footer__nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 7px;
+  color: white;
+  list-style-type: none;
+  padding: 0;
+  font-size: 20px;
+  letter-spacing: 5px;
+}
+.footer__li:hover {
+  color: #f58cab;
 }
 
 /*# sourceMappingURL=index.css.map */
