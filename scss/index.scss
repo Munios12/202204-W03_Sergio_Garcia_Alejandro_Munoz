@@ -13,8 +13,9 @@ body {
 
 /*-------------------------------HEADER--------------------------*/
 
-.list__element-img {
-    width: 200px;
+.list-element__img {
+    width: 150px;
+    margin: 30px 0px;
 }
 
 .header {
@@ -26,36 +27,76 @@ body {
     display: flex;
     justify-content: space-between;
     list-style: none;
-}
 
-.nav__list--element {
-    height: 100%;
-}
+    &--element {
+        height: 100%;
+    }
 
-.nav__list--element,
-a {
-    text-decoration: none;
-    color: black;
+    &--element,
+    a {
+        text-decoration: none;
+        color: black;
+    }
 }
 
 /*-------------------------------MAIN--------------------------*/
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+}
 
-.main__section--video {
+.video {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 40px;
-    height: 300px;
+    gap: 10px;
+    height: 250px;
     background-color: #ff8dac;
     font-size: 1.2rem;
     color: $primary-color;
-    letter-spacing: 0.5rem;
-    transform: scale(1.1) skewY(-10deg);
-    width: 95.2%;
+    letter-spacing: 0.3rem;
+    width: 100%;
+    transform: skewY(-9deg);
 
-    .video--img {
-        width: 100px;
-        transform: scale(1) skewY(10deg);
+    &__img {
+        width: 80px;
+        padding: 20px 0;
+        transform: skewY(9deg);
     }
+    &__title {
+        font-weight: lighter;
+    }
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding: 20px 10px 20px 10px;
+
+    &__title {
+        font-size: 1.4rem;
+        letter-spacing: 0.4rem;
+        text-align: center;
+        font-weight: normal;
+        margin: 0px 30px;
+        padding: 20px 0px;
+    }
+
+    &__text {
+        text-transform: uppercase;
+        font-size: small;
+        letter-spacing: 0.2rem;
+        text-align: center;
+        line-height: 1.8rem;
+    }
+}
+
+.section__end-icon {
+    width: 8px;
 }

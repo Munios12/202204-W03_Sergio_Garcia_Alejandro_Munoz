@@ -7,7 +7,7 @@
         <title>Panic</title>
         <link rel="stylesheet" href="./css/index.css" />
         <link
-            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Nunito:wght@800&family=Oswald&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Oswald:wght@300;400&display=swap"
             rel="stylesheet"
         />
     </head>
@@ -15,12 +15,12 @@
         <header class="header">
             <nav class="header__nav">
                 <ul class="nav__list">
-                    <li class="nav__list--element">
+                    <li class="nav__list__element">
                         <a href="#"><img src="./assets/icons-svg-clean/icon-hamburger.svg" /></a>
                     </li>
                     <li class="nav__list--element">
                         <a href="#">
-                            <img src="./assets/logos/logo.png" class="list__element-img" />
+                            <img class="list-element__img" src="./assets/media/panic-logo.svg" />
                         </a>
                     </li>
                     <li class="nav__list--element">
@@ -30,19 +30,20 @@
             </nav>
         </header>
         <main class="main">
-            <section class="main__section">
-                <div class="main__section--video">
-                    <img class="video--img" src="./assets/media/play.png" />
-                    <h5 class="video--title">Lorem</h5>
-                    <h5 class="video--title">Lorem</h5>
+            <section class="section">
+                <div class="video">
+                    <img class="video__img" src="./assets/media/play.png" />
+                    <p class="video__title">Lorem</p>
+                    <p class="video__subtitle">Lorem</p>
                 </div>
-                <h1 class="main__section--title">LOREM IPSUM DOLOR SIT</h1>
-                <p class="main__section--text">
-                    In et erat eu libero vehicula vehicula. Donec vitae orci scelerisque, vulputate dui id, eleifend
-                    leo. Nam vulputate elit vitae erat ornare pretium. Cras sit amet lacinia lacus. Integer sit amet
-                    ornare diam, eu ultrices neque. Suspendisse potenti. Donec malesuada nisl ac volutpat venenatis.
-                    Morbi quis iaculis magna.
-                </p>
+                <div class="text-container">
+                    <p class="text-container__title">LOREM IPSUM DOLOR SIT</p>
+                    <p class="text-container__text">
+                        amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+                        ut enim ad minim veniam, quis nostrud
+                    </p>
+                </div>
+                <img class="section__end-icon" src="./assets/icons-svg-clean/icon-x.svg" />
             </section>
         </main>
     </body>
