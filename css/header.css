@@ -20,16 +20,17 @@ body {
   width: 100%;
 }
 
-.nav__list {
+.header__nav__list {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   list-style: none;
 }
-.nav__list--element {
+.header__nav__list--element {
   height: 100%;
 }
-.nav__list--element,
-.nav__list a {
+.header__nav__list--element,
+.header__nav__list a {
   text-decoration: none;
   color: black;
 }

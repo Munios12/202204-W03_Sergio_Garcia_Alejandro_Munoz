@@ -23,8 +23,9 @@ body {
     width: 100%;
 }
 
-.nav__list {
+.header__nav__list {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     list-style: none;
 
