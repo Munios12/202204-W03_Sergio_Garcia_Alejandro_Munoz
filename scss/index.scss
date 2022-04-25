@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+   
     background-color: #080d14;
     font-family: "oswald";
     font-size: 15px;
@@ -13,28 +14,47 @@
     &__title {
         color: #15ffbc;
         letter-spacing: 5px;
-        padding-bottom: 2vh;
     }
 
     &__icon {
         color: #15ffbc;
-        width: 0.6em;
-        padding-bottom: 5vh;
+        width: 0.4em;
+        padding-top: 3vh;
+        padding-bottom: 3vh;
     }
+}
 
-    &__nav {
+.nav {
+    gap: 7px;
+    color: white;
+    padding-bottom: 2vh;
+    padding-left: 2vh;
+    padding-right: 2vh;
+    font-size: 20px;
+    letter-spacing: 5px;
+
+    &__list {
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-between;
-        gap: 7px;
-        color: white;
+
+
+        text-align: center;
         list-style-type: none;
-        padding: 0;
-        font-size: 20px;
-        letter-spacing: 5px;
     }
+
     &__li:hover {
         color: #f58cab;
+    }
+}
+
+.h3 {
+    color: white;
+    font-size: 13px;
+    letter-spacing: 5px;
+    padding-top: 3vh;
+
+    &__li {
+        list-style-type: none;
     }
 }
