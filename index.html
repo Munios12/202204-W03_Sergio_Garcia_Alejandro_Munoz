@@ -5,35 +5,65 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Panic</title>
-        <link rel="stylesheet" href="./css/index.css" />
 
-
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Oswald:wght@300&display=swap" rel="stylesheet">
-
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-
+        <link rel="stylesheet" href="./css/header.css" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Oswald:wght@300;400&display=swap"
+            rel="stylesheet"
+        />
     </head>
     <body>
-    <footer class="footer">
-        <h2 class="footer__title">Lorem ipsum dolor</h2>
-        <img class="footer__icon" src="assets/icons-svg-clean/icon-x-rounded.svg"></img>
-       <nav class="nav">
-        <ul class="nav__list">
-            <li class="nav__li">Home</li>
-            <li class="nav__li">Works</li>
-            <li class="nav__li">About</li>
-            <li class="nav__li">Contact</li>
-        </ul>
-        </nav>
-        <h3 class="h3">Lorem ipsum</section>
-            <ul class="h3__ul">
-                <li class="h3__li">dolor</li>
-                <li class="h3__li">sit amet, consectetur</li>
+        <header class="header">
+            <nav class="header__nav">
+                <ul class="nav__list">
+                    <li class="nav__list__element">
+                        <a href="#"><img src="./assets/icons-svg-clean/icon-hamburger.svg" /></a>
+                    </li>
+                    <li class="nav__list--element">
+                        <a href="#">
+                            <img class="list-element__img" src="./assets/media/panic-logo.svg" />
+                        </a>
+                    </li>
+                    <li class="nav__list--element">
+                        <a href="#">home</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main">
+            <section class="section">
+                <div class="video">
+                    <img class="video__img" src="./assets/media/play.png" />
+                    <p class="video__title">Lorem</p>
+                    <p class="video__subtitle">Lorem</p>
+                </div>
+                <div class="text-container">
+                    <p class="text-container__title">LOREM IPSUM DOLOR SIT</p>
+                    <p class="text-container__text">
+                        amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+                        ut enim ad minim veniam, quis nostrud
+                    </p>
+                </div>
+                <img class="section__end-icon" src="./assets/icons-svg-clean/icon-x.svg" />
+            </section>
+        </main>
+      
+        <footer class="footer">
+            <h2 class="footer__title">Lorem ipsum dolor</h2>
+            <img class="footer__icon" src="assets/icons-svg-clean/icon-x-rounded.svg"></img>
+           <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__li">Home</li>
+                <li class="nav__li">Works</li>
+                <li class="nav__li">About</li>
+                <li class="nav__li">Contact</li>
             </ul>
-    </footer>
+            </nav>
+            <h3 class="h3">Lorem ipsum</section>
+                <ul class="h3__ul">
+                    <li class="h3__li">dolor</li>
+                    <li class="h3__li">sit amet, consectetur</li>
+                </ul>
+        </footer>
     </body>
 </html>
