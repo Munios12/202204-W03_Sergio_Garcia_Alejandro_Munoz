@@ -1,3 +1,23 @@
-footer {
+.footer {
     background-color: #080d14;
+    font-family: "oswald";
+    font-size: small;
+    text-align: center;
+    padding-top: 15vh;
+    padding-bottom: 3vh;
+    padding-left: 1vh;
+    padding-right: 1vh;
+    height: 130vh;
+
+    &__title {
+        color: #15ffbc;
+        letter-spacing: 5px;
+        padding-bottom: 2vh ;
+    }
+
+    &__icon {
+        color: #15ffbc;
+        width: 0.6em;
+        padding-bottom: 3vh;
+    }
 }
