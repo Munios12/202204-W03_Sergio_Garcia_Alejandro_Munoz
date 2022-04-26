@@ -28,7 +28,6 @@
 
 .nav {
   gap: 7px;
-  color: white;
   padding-bottom: 2vh;
   padding-left: 2vh;
   padding-right: 2vh;
@@ -42,7 +41,25 @@
   text-align: center;
   list-style-type: none;
 }
-.nav__li:hover {
+.nav__list a {
+  text-decoration: none;
+  color: white;
+  position: relative;
+}
+.nav__list a:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -3px;
+  background-color: #f58cab;
+  width: 103%;
+  height: 2px;
+  transform: scaleX(0);
+}
+.nav__list a:hover:before {
+  transform: scale(1);
+}
+.nav__list a:hover {
   color: #f58cab;
   cursor: pointer;
 }
