@@ -65,7 +65,7 @@ body {
     &__img {
         width: 80px;
         padding: 20px 0;
-        transform: skewY(9deg);
+        transform: skewY(10deg);
     }
     &__title {
         font-weight: lighter;
@@ -78,7 +78,7 @@ body {
     justify-content: center;
     align-items: center;
     margin-top: 20px;
-    padding: 20px 10px 20px 10px;
+    padding: 20px 20px 20px 20px;
 
     &__title {
         font-size: 1.4rem;
@@ -91,13 +91,64 @@ body {
 
     &__text {
         text-transform: uppercase;
-        font-size: small;
-        letter-spacing: 0.2rem;
+        font-size: medium;
+        letter-spacing: 0.3rem;
         text-align: center;
-        line-height: 1.8rem;
+        line-height: 2.5rem;
     }
 }
 
 .section__end-icon {
-    width: 8px;
+    margin-top: 2rem;
+    width: 10px;
+}
+
+.section__divider {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 30px;
+    width: 100%;
+    height: 15rem;
+    letter-spacing: 0.2rem;
+
+    & img {
+        width: 60px;
+    }
+
+    .divider__text {
+        font-weight: normal;
+    }
+    .divider__subtext {
+        text-decoration: underline;
+    }
+}
+
+.images-carroussel {
+    width: 100%;
+    margin-bottom: 90px;
+}
+
+.images-carroussel__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    position: relative;
+
+    .carroussel__image {
+        object-fit: contain;
+        width: 100%;
+        clip-path: polygon(100% 0, 100% 80%, 0 100%, 0 20%);
+    }
+
+    .carroussel__title {
+        position: absolute;
+        top: 83vw;
+        left: 15vh;
+        transform: skewY(-10.5deg);
+        letter-spacing: 0.2rem;
+        font-size: 1.4rem;
+    }
 }
