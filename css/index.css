@@ -10,10 +10,8 @@
   font-family: "open sans", sans-serif;
   font-size: 15px;
   font-weight: normal;
-  padding-top: 15vh;
-  padding-left: 2vh;
-  padding-right: 2vh;
-  height: 180vh;
+  padding-top: 60px;
+  position: relative;
 }
 .footer__title {
   color: #15ffbc;
@@ -25,10 +23,20 @@
   padding-top: 3vh;
   padding-bottom: 3vh;
 }
+.footer::before {
+  position: absolute;
+  top: -3em;
+  left: initial;
+  content: "";
+  width: 100%;
+  height: 90px;
+  background-color: #080d14;
+  z-index: 2;
+  transform: skewY(-10deg);
+}
 
 .nav {
   gap: 7px;
-  color: white;
   padding-bottom: 2vh;
   padding-left: 2vh;
   padding-right: 2vh;
@@ -42,7 +50,25 @@
   text-align: center;
   list-style-type: none;
 }
-.nav__li:hover {
+.nav__list a {
+  text-decoration: none;
+  color: white;
+  position: relative;
+}
+.nav__list a:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -3px;
+  background-color: #f58cab;
+  width: 103%;
+  height: 2px;
+  transform: scaleX(0);
+}
+.nav__list a:hover:before {
+  transform: scale(1);
+}
+.nav__list a:hover {
   color: #f58cab;
   cursor: pointer;
 }
