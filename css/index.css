@@ -118,4 +118,32 @@
   cursor: pointer;
 }
 
+.main__container {
+  padding-top: 2em;
+  padding-bottom: 5em;
+}
+
+.main__background {
+  background-color: #15ffbc;
+}
+
+.main__background2 {
+  background-color: #080d14;
+}
+
+.images__img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  clip-path: inset(18% 0 18% 0);
+  margin: -25% 0 -35% 0;
+  width: 100%;
+  background-color: #ff8dac;
+  font-size: 1.2rem;
+  color: #15ffbc;
+  letter-spacing: 0.3rem;
+  transform: skewY(-9deg);
+}
+
 /*# sourceMappingURL=index.css.map */
